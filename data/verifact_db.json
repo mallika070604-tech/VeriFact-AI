@@ -1,0 +1,680 @@
+{
+  "users": [
+    {
+      "id": "admin-001",
+      "name": "System Admin",
+      "email": "admin@verifact.ai",
+      "role": "admin",
+      "preferredLanguage": "en",
+      "theme": "dark",
+      "createdAt": "2026-07-11T10:11:44.820Z",
+      "passwordHash": "$2b$10$dpQu4tbPxxz9slEqwULrMuI8jftR.O4vhPqVbHKTGSr.horL./1je"
+    },
+    {
+      "id": "user-001",
+      "name": "Pooja User",
+      "email": "pooja2306007@gmail.com",
+      "role": "user",
+      "preferredLanguage": "en",
+      "theme": "dark",
+      "createdAt": "2026-07-26T10:11:44.821Z",
+      "passwordHash": "$2b$10$MveWKMsZG/Z4Qk2NQEc2i..jLljnXnVuJRw67ijApk99w7MdCIUwu"
+    },
+    {
+      "id": "user-1786359257422",
+      "name": "Audit User",
+      "email": "audit@verifact.ai",
+      "role": "user",
+      "preferredLanguage": "en",
+      "theme": "dark",
+      "createdAt": "2026-08-10T10:54:17.422Z",
+      "passwordHash": "$2b$10$ZDNR2CX.6OpvJ8exnqJSsufovpfAtdg.zO6m9ZsNkqr.v5Zxqj5s."
+    }
+  ],
+  "analyses": [
+    {
+      "inputType": "url",
+      "originalInput": "https://example.com",
+      "extractedText": "[TITLE]: Example Domain\n[URL]: https://example.com/\n\n[ARTICLE BODY]:\nThis domain is for use in documentation examples without needing permission. Avoid use in operations.",
+      "articleUrl": "https://example.com",
+      "articleTitle": "Example Domain",
+      "verdict": "REAL",
+      "confidence": 98,
+      "riskLevel": "LOW",
+      "category": "Technology",
+      "evidenceQuality": "STRONG",
+      "claim": "The domain example.com is reserved for use in documentation examples without requiring prior permission.",
+      "summary": "The statement regarding example.com is accurate and reflects official Internet standards. RFC 2606 and RFC 6761 officially reserve example.com for documentation and illustrative purposes.",
+      "explanation": "According to the Internet Assigned Numbers Authority (IANA) and standard Internet Engineering Task Force (IETF) specifications (RFC 2606 and RFC 6761), the domain example.com is explicitly reserved for use in documentation, tutorials, and examples without requiring prior authorization.",
+      "warningSigns": [],
+      "evidence": [
+        "RFC 2606 (Reserved Top Level DNS Names) reserves 'example.com', 'example.net', and 'example.org' for documentation purposes.",
+        "IANA manages the domain directly as a standard reference point in web specifications."
+      ],
+      "sources": [
+        {
+          "name": "IANA",
+          "title": "IANA Special-Use Domain Names",
+          "link": "https://www.iana.org/domains/reserved",
+          "relevance": "Official registry documentation confirming the reserved status of example.com."
+        }
+      ],
+      "recommendedAction": "No action needed. The content represents standard technological placeholder text.",
+      "detectedLanguage": "English",
+      "claimType": "Technical Documentation Standard",
+      "claimOrigin": "ORIGINAL_CLAIM",
+      "factCheckContext": "Standard web domain documentation notice.",
+      "isFactCheckArticle": false,
+      "isMultipleClaimsDetected": false,
+      "sourceCredibility": {
+        "organization": "IANA / Example Domain",
+        "credibilityScore": 100,
+        "ratingReason": "Official Internet infrastructure reference managed by IANA."
+      },
+      "originalClaim": "The domain example.com is reserved for use in documentation examples without requiring prior permission.",
+      "sourceName": "IANA / Example Domain",
+      "id": "ana-1786359281816-my8oj",
+      "createdAt": "2026-08-10T10:54:41.816Z"
+    },
+    {
+      "inputType": "text",
+      "originalInput": "NASA announced that astronauts discovered evidence of liquid water under the surface of Europa.",
+      "extractedText": "NASA announced that astronauts discovered evidence of liquid water under the surface of Europa.",
+      "verdict": "FAKE",
+      "confidence": 98,
+      "riskLevel": "LOW",
+      "category": "Science",
+      "evidenceQuality": "STRONG",
+      "claim": "NASA announced that astronauts discovered evidence of liquid water under the surface of Europa.",
+      "summary": "The claim that astronauts discovered liquid water on Europa is false. While robotic space probes and telescopes have gathered strong evidence of a subsurface ocean on Europa, human astronauts have never traveled to Jupiter or its moons.",
+      "explanation": "Human spaceflight has never extended beyond Earth's Moon. No human astronauts have ever been sent to Jupiter or its moon, Europa. While NASA and the scientific community do have evidence supporting a subsurface liquid water ocean on Europa, these findings were made using unmanned robotic spacecraft—such as the Voyager and Galileo missions—and astronomical instruments like the Hubble Space Telescope. NASA has never announced any discovery made by astronauts on Europa.",
+      "warningSigns": [
+        "Falsely claims human astronauts visited the outer solar system when human spaceflight has not gone beyond the Moon.",
+        "Confuses robotic space probe data with crewed astronaut missions."
+      ],
+      "evidence": [
+        "Human astronauts have never traveled past Earth's Moon; no human mission has ever gone to Jupiter or Europa.",
+        "Evidence of Europa's subsurface ocean comes entirely from robotic spacecraft (Voyager 1 & 2, Galileo, Juno) and remote observatories like the Hubble Space Telescope.",
+        "Official NASA mission timelines document that crewed spaceflight is currently restricted to Low Earth Orbit and planned lunar missions under the Artemis program."
+      ],
+      "sources": [
+        {
+          "name": "NASA Solar System Exploration",
+          "title": "Europa Overview",
+          "link": "https://solarsystem.nasa.gov/moons/jupiter-moons/europa/in-depth/",
+          "relevance": "Provides official records on scientific discoveries regarding Europa made by robotic spacecraft."
+        },
+        {
+          "name": "NASA",
+          "title": "Humans in Space",
+          "link": "https://www.nasa.gov/humans-in-space/",
+          "relevance": "Confirms the history and current boundaries of human space exploration."
+        }
+      ],
+      "recommendedAction": "Verify space exploration claims against official NASA publications. Distinguish between automated robotic probe discoveries and crewed space missions.",
+      "detectedLanguage": "English",
+      "claimType": "Space Exploration Misinformation",
+      "claimOrigin": "ORIGINAL_CLAIM",
+      "factCheckContext": "Claim asserts human astronauts discovered water on Jupiter's moon Europa.",
+      "isFactCheckArticle": false,
+      "isMultipleClaimsDetected": false,
+      "sourceCredibility": {
+        "organization": "Unverified Public Claim",
+        "credibilityScore": 10,
+        "ratingReason": "Presents factually impossible events regarding human space travel as factual news."
+      },
+      "originalClaim": "NASA announced that astronauts discovered evidence of liquid water under the surface of Europa.",
+      "sourceName": "Unverified Public Claim",
+      "id": "ana-1786359270800-np8tm",
+      "createdAt": "2026-08-10T10:54:30.800Z"
+    },
+    {
+      "inputType": "text",
+      "originalInput": "nasa said there will be no sun for the next three days",
+      "extractedText": "nasa said there will be no sun for the next three days",
+      "verdict": "FAKE",
+      "confidence": 98,
+      "riskLevel": "LOW",
+      "category": "Science",
+      "evidenceQuality": "STRONG",
+      "claim": "NASA said there will be no sun for the next three days",
+      "summary": "రాబోయే మూడు రోజుల పాటు సూర్యుడు ఉండడని లేదా భూమి అంతటా చీకటి కమ్ముకుంటుందని నాసా (NASA) చెప్పినట్లు జరుగుతున్న ప్రచారం పూర్తిగా అసత్యం. నాసా అటువంటి ఎలాంటి ప్రకటన చేయలేదు. ఇది సోషల్ మీడియాలో క్రమం తప్పకుండా పునరావృతమయ్యే ఒక పాత వదంతు (Hoax).",
+      "explanation": "సూర్యుడు అకస్మాత్తుగా మూడు రోజుల పాటు కాంతిని ఇవ్వడం ఆపేయడం లేదా భూమిపై పూర్తిగా చీకటి కమ్ముకోవడం అనేది ఖగోళ భౌతిక శాస్త్ర సూత్రాల ప్రకారం అసాధ్యం. నాసా (NASA) లేదా ఏ ఇతర అధికారిక అంతరిక్ష పరిశోధనా సంస్థ కూడా ఇటువంటి ప్రకటనను జారీ చేయలేదు. గతంలో కూడా '3 Days of Darkness' పేరుతో అనేక సార్లు వైరల్ అయిన ఈ ప్రచారాన్ని నాసా శాస్త్రవేత్తలు ఖండించారు.",
+      "warningSigns": [
+        "అధికారిక వెబ్‌సైట్ లింక్‌లు లేదా ఆధారాలు లేకుండా భయాందోళన సృష్టించే సోషల్ మీడియా పోస్టులు.",
+        "నాసా (NASA) వంటి పేరున్న అంతరిక్ష సంస్థల పేర్లను అసత్య ప్రచారాల కోసం దుర్వినియోగం చేయడం.",
+        "శాస్త్రీయంగా అసాధ్యమైన విషయాలను నిజమని నమ్మించే ప్రయత్నం చేయడం."
+      ],
+      "evidence": [
+        "నాసా (NASA) తన అధికారిక నివేదికలలో గానీ, ప్రెస్ నోట్లలో గానీ ఇటువంటి ప్రకటనను ఎప్పుడూ చేయలేదు.",
+        "సూర్యుడు నిరంతరం నిరంతరాయంగా శక్తిని, కాంతిని విడుదల చేస్తాడు; ఇది అకస్మాత్తుగా మూడు రోజులు ఆగిపోవడం అసాధ్యం.",
+        "ఇదే తరహా ప్రచారాలు 2012, 2014, மற்றும் 2020 సంవత్సరాల్లో కూడా వ్యాపించగా, ప్రముఖ ఫ్యాక్ట్-చెక్ సంస్థలు మరియు నాసా వాటిని ఖండించాయి."
+      ],
+      "sources": [
+        {
+          "name": "NASA",
+          "title": "NASA Official News & Statements",
+          "link": "https://www.nasa.gov",
+          "relevance": "Official space agency portal demonstrating no such announcement exists."
+        },
+        {
+          "name": "Snopes Fact Check",
+          "title": "Will Earth Experience Days of Darkness?",
+          "link": "https://www.snopes.com/fact-check/3-days-of-darkness/",
+          "relevance": "Fact-check article debunking the recurring solar darkness hoax."
+        }
+      ],
+      "recommendedAction": "ఇటువంటి ఆధారాలు లేని వదంతులను నమ్మవద్దు మరియు సోషల్ మీడియా గ్రూపులలో షేర్ చేయవద్దు. అంతరిక్షం మరియు సైన్స్ వార్తల కోసం కేవలం నాసా లేదా ఇతర అధికారిక శాస్త్రీయ సంస్థల వెబ్‌సైట్‌లను మాత్రమే పరిశీలించండి.",
+      "detectedLanguage": "English",
+      "claimType": "Viral Hoax",
+      "claimOrigin": "ORIGINAL_CLAIM",
+      "factCheckContext": "Recurring viral social media hoax claiming Earth will experience days of darkness based on a fabricated NASA announcement.",
+      "isFactCheckArticle": false,
+      "isMultipleClaimsDetected": false,
+      "sourceCredibility": {
+        "organization": "Social Media Viral Post",
+        "credibilityScore": 0,
+        "ratingReason": "Anonymous viral claims without official backing or verifiable sources."
+      },
+      "originalClaim": "NASA said there will be no sun for the next three days",
+      "sourceName": "Social Media Viral Post",
+      "id": "ana-1786358877370-3tcio",
+      "createdAt": "2026-08-10T10:47:57.370Z"
+    },
+    {
+      "inputType": "url",
+      "originalInput": "https://apnews.com/article/99af1f80eb43d31966cae8e68dbc3415?utm_source=chatgpt.com",
+      "extractedText": "[TITLE]: FACT FOCUS: A look at false and misleading claims surrounding the 2024 election\n[SUMMARY]: With early voting underway, false and misleading reports have emerged online. A Kentucky voting machine that registered a vote for Vice President Kamala Harris when the voter meant to select former President Donald Trump was found to be user error, not fraud.\n[AUTHOR]: https://apnews.com/author/the-associated-press\n[DATE]: 2024-10-29T19:05:30\n[URL]: https://apnews.com/article/fact-check-misinformation-houston-rally-confrontation-99af1f80eb43d31966cae8e68dbc3415\n\n[ARTICLE BODY]:\nFACT FOCUS: A look at false and misleading claims surrounding the 2024 election\n\nPeople leave after voting in the Atlanta suburb of Sandy Springs, Ga., on Tuesday, Oct. 15, 2024, the first day of early in-person voting in Georgia. (AP Photo/Jeff Amy)\n\nA steady stream of false and misleading information is circulating online around the 2024 election. A Kentucky voting machine that registered a vote for Vice President Kamala Harris when the voter meant to select former President Donald Trump has been found to be user error, not fraud, according to officials in Laurel County, where the issue occurred. A video circulating widely on social media that shows a man who says he is a Haitian immigrant claiming he is planning to vote multiple times in Georgia is fake. U.S. intelligence officials confirmed on Friday that the video is the work of Russian influence creators.\n\nHere’s a look at the facts.\n\nUser error cited as reason for Kentucky machine’s switch of vote for Trump to Harris\n\nCLAIM: A video showing a ballot marking machine in Laurel County, Kentucky, that marks Vice President Kamala Harris when the voter tries to select former President Donald Trump is proof of fraud.\n\nThe machine was taken out of service until the Kentucky attorney general’s office investigated, according to Brown, and its use has since resumed. He added that there have been no other complaints about the machine — before or after the incident — and that the voter in the video said she was able to cast a ballot for her preferred candidate.\n\nIn the video, someone off camera tries to vote for Trump by pressing a small square in the top-left corner of a larger box with his name. Harris’ name is highlighted in green on the seventh attempt, indicating that it has been selected instead.\n\nPosts claiming that the video shows election interference received hundreds of thousands of likes and shares on multiple social media platforms.\n\n“Don’t go to the side and hit this tiny box in the side in the corner because it won’t work that way,” he cautions.\n\n— Associated Press writer Melissa Goldin in New York contributed this item.\n\nVideo that claims to show a Haitian immigrant who plans to vote multiple times in Georgia is fake\n\nCLAIM: A video shows a Haitian immigrant talking about how he’s intending to vote multiple times in two Georgia counties for Vice President Kamala Harris.\n\n“This is false and is an example of targeted disinformation we’ve seen this election,” he said. He added that his office is working with federal and state partners, including the Cybersecurity and Infrastructure Security Agency, to combat the disinformation and identify its origin.\n\nThe intelligence community expects Russia, in the days before the election and weeks and months after, “to create and release additional media content that seeks to undermine trust in the integrity of the election and divide Americans,” said the joint statement from the FBI, the Cybersecurity and Infrastructure Security Agency and the Office of the Director of National Intelligence.\n\nThe 20-second video shows a man who describes himself as a Haitian immigrant with American citizenship who plans to vote multiple times in Georgia’s Gwinnett and Fulton counties. He flashes several purported Georgia IDs with different names and addresses.\n\nAn Associated Press analysis of the information on two of the IDs confirms it does not match any registered voters in Gwinnett or Fulton counties.\n\nThe video began circulating on the social media platform X on Thursday afternoon. The post that originally popularized it was no longer on X on Friday morning, but copycat versions were still being shared widely with false claims it showed election fraud.\n\n“We know that Storm-1516, and Russia more broadly, has for many years been focused on undermining the legitimacy of our democratic process,” he wrote in an email. “This video fits with that goal.”\n\n— Associated Press writers Ali Swenson and Melissa Goldin in New York, and Eric Tucker in Washington, contributed this report.\n\nVideo shows routine election operations in a Pennsylvania county, not voter fraud\n\nCLAIM: A video of a man dropping off a large number of ballots at the courthouse in Northampton County, Pennsylvania, shows evidence of voter fraud.\n\nTHE FACTS: That’s false. Northampton County Executive Lamont McClure told The Associated Press that the video, which spread widely on X with several users actively trying to identify the man, showed nothing but routine election operations.\n\nThe man in the video is the local postmaster and was doing his job, dropping off ballots as instructed after collection, McClure said in an email. He noted that the misinformation led to unwarranted harassment against the postmaster.\n\n“This is a postal service servant doing his public duty,” he said. ”Folks should find out all the facts before they go sharing things online.”\n\nThe courthouse is surrounded by security cameras and other safeguards to ensure the election runs smoothly, McClure said.\n\nThe county executive replied to the original video on X, which was shared more than 14,000 times. A Community Note was placed on the post explaining the misrepresentation.\n\nVideo shows a group seeking assistance for elderly and disabled members, not cutting line to vote in Pennsylvania\n\nCLAIM: A video shows busloads of noncitizens skipping the line to vote at a satellite election office in Allegheny County, Pennsylvania.\n\nIn the video, a group of people walk up to the South Park Ice Rink office in the borough of Bethel Park and stop to speak with a woman outside the building.\n\n“ILLEGAL ‘VOTERS’ CUTTING THE LINE AGAIN!” reads an X post that shared the video. “Look at this BS in Pennsylvania… swing states… it figures. BUSSES of non-english speaking ‘citizens’ are guided past Americans who had been waiting in line for hours to cast their early votes.”\n\nAs of Wednesday, the erroneous post had been liked and shared approximately 122,700 times.\n\nThe county’s statement explained that the group “came to apply for mail in ballots and needed the assistance of translators.”\n\nThe video shows a “brief conversation between voters, their translators, and a county employee.”\n\nElderly and disabled people from the group were told by the county employee to sit while they waited for their turn — an accommodation offered to any elderly and disabled voter at Allegheny County satellite offices — and able-bodied voters went to the back of the line, according to the statement. Translators helped those who needed them.\n\nWoman in video shouting at a child outside a Houston rally is falsely identified\n\nBowen, who also worked as a fellow for HCDP from 2019 to 2020, told The Associated Press she attended the rally, but said she was unaware of any issue until friends started texting her, asking what was going on. Nasty messages, including death threats, quickly followed. Her mother’s address and work information were posted online.\n\nIn photos from the rally that Bowen shared with the AP, she looks nothing like the woman in the video. She is wearing a baggy gray shirt, glasses and a hat with “HOU” in rainbow letters. Her hair, worn down, is dark brown. The woman in the video is wearing a crop top, her hair is light brown and was braided into low pigtail buns. She is not wearing glasses.\n\nA woman nearby steps forward to intervene as a man holding a microphone lifts the girl out of the stroller. The woman who had been shouting then positions herself in front of the man and the girl. Using his microphone, the mans asks, “Are you ashamed at all?” to which she answers, “No.”\n\nSeveral social media posts wrongly singled Bowen out as the alleged aggressor, using the video as an example of “typical” Democrat behavior. One TikTok video, captioned “Trump 2024,” that showed a screenshot of the video next to an actual photo of Bowen, had been viewed approximately 1.1 million times as of Tuesday.\n\nBowen said the viral misinformation has made her feel concerned for the safety of herself and her family. She is working with an attorney and considering legal action. She believes she was targeted because of her work with the Democratic Party, including efforts to get Democrats elected in Texas.\n\nA statement released by Oxner Legha Law Firm, which is representing Bowen, said that the misinformation has caused “baseless threats to her safety, undue distress, and substantial harm to her reputation.” It called on those who shared it, including the social media platforms, to “issue prompt and prominent retractions.”\n\nDerek Kelly, HCDP’s chief of staff, confirmed that Bowen previously worked for the party. He said its office was also flooded with nasty messages soon after the false posts emerged and that the calls were making it difficult for those with legitimate issues to get through. Armed security officers are making regular stops at the office given the violent nature of some messages.\n\n“It’s a big impediment to our doing our job,” he said of the false claims. “It’s just completely fake, made up stuff.”\n\nVideo of Trump ballots being destroyed in Pennsylvania was fabricated\n\nCLAIM: A video shows ballots marked for Trump being destroyed in Bucks County, Pennsylvania, while those for Vice President Kamala Harris were put back in their envelopes to be counted.\n\nTHE FACTS: The Bucks County Board of Elections identified the video as “fake” Thursday afternoon. And the FBI and other U.S. intelligence agencies said the video was “manufactured and amplified” by Russian actors.\n\nIn a statement released late Friday, the FBI, the Office of the Director of National Intelligence and the Cybersecurity and Infrastructure Security Agency said the video is “part of Moscow’s broader effort to raise unfounded questions about the integrity of the U.S. election and stoke divisions among Americans.”\n\nThe Bucks County district attorney’s office said in an emailed statement Thursday evening that they and the Yardley Borough Police Department investigated the video and “concluded that this video was fabricated in an attempt to undermine confidence in the upcoming election.”\n\nThe FBI statement also warned that U.S. intelligence officials expect Russia will “create and release additional media content that seeks to undermine trust in the integrity of the election and divide Americans” in the coming weeks.\n\n— Melissa Goldin and Ali Swenson\n\nPosts spread misinformation about Michigan’s voter rolls\n\nCLAIM: Michigan has 500,000 more registered voters than people eligible to vote, which creates the potential for widespread fraud.\n\nMusk did not respond to a request for comment from The Associated Press.\n\nThis waiting period is why there are more total registered voters than eligible ones in the state.\n\nGeorgia voting machines are not flipping votes\n\nCLAIM: A Dominion voting machine in Whitfield County, Georgia, flipped a vote to a candidate not marked by the voter.\n\nTHE FACTS: That’s false. The Whitfield County Board of Elections and Registrars issued a press release Oct. 19, noting the case involved one voter out of 6,000 ballots cast since early voting began Oct. 15. The ballot was spoiled, and the voter cast a replacement that was counted. Officials said there was no problem with the voting machine.\n\nGabriel Sterling, chief operating officer for the Georgia secretary of state’s office, said every report they’ve seen so far of someone saying their printed ballot didn’t reflect their selections on the touchscreen voting machine has been a result of voter error.\n\nThe statements followed a post by U.S. Rep. Marjorie Taylor Greene, who claimed on X that a voting machine had changed a voter’s ballot in her Georgia district during early voting. She later updated her post to include a statement from county election officials explaining what happened and thanking them for resolving the issue.\n\nWhitfield County election officials said in the press release that the voter noticed when reviewing their printed ballot that it didn’t reflect their choice. A poll worker assisted the voter in marking their choice and casting their vote.\n\n“Georgia law allows voters to spoil their printed ballot if they make the wrong selection on the ballot marking device. If a voter requests to change their selections, they are immediately given a new opportunity to make and print the correct choice,” officials said.\n\nThey noted that if there was reason to suspect that the machine made an error it would be taken out of service. No machines were taken out of service, county election officials said.\n\nAssociated Press writer Melissa Goldin in New York contributed to this report.",
+      "articleUrl": "https://apnews.com/article/99af1f80eb43d31966cae8e68dbc3415?utm_source=chatgpt.com",
+      "articleTitle": "FACT FOCUS: A look at false and misleading claims surrounding the 2024 election",
+      "verdict": "FAKE",
+      "confidence": 95,
+      "riskLevel": "HIGH",
+      "category": "Politics",
+      "evidenceQuality": "STRONG",
+      "claim": "Multiple fact-checked election fraud claims regarding the 2024 U.S. presidential election",
+      "summary": "This AP News fact-check roundup evaluates several viral social media claims alleging voting machine manipulation, ballot destruction, and noncitizen voting during the 2024 U.S. election. Official investigations by election boards, law enforcement, and U.S. intelligence agencies revealed that these claims are false, stemming from user error, routine postal operations, or foreign disinformation campaigns.",
+      "explanation": "The viral claims circulating during the 2024 election cycle were debunked by election authorities and intelligence agencies. Incidents involving touched-screen vote changes in Kentucky and Georgia were confirmed to be individual voter touchscreen errors that were corrected before ballots were cast. Videos depicting fake Haitian voters and destroyed ballots for Donald Trump were identified by the FBI, CISA, and ODNI as manufactured Russian disinformation. Other claims misidentified postal workers and voters receiving routine disability/translation assistance as perpetrators of election fraud.",
+      "warningSigns": [
+        "Sensationalized viral video clips alleging systemic voting fraud without context",
+        "Fabricated foreign influence operations designed to undermine trust in democratic processes",
+        "Misinterpreting routine postal and administrative voter assistance as illegal acts",
+        "False claims of voting machine manipulation disproved by official audits and local election boards"
+      ],
+      "evidence": [
+        "Laurel County, KY officials verified that voting machine touch box issues were due to user touch placement, and the voter successfully cast her vote.",
+        "U.S. intelligence agencies (FBI, CISA, ODNI) confirmed that viral videos showing a Haitian immigrant voting multiple times and ballots being destroyed in Bucks County, PA were manufactured Russian disinformation.",
+        "Northampton County, PA officials confirmed a man dropping off large quantities of ballots was a local postmaster performing official duties.",
+        "Allegheny County, PA officials clarified that a group provided assistance at a satellite election office were elderly/disabled voters and translators following standard procedures.",
+        "Whitfield County, GA election officials confirmed that reports of flipped votes stemmed from voter error that was resolved using standard spoiled ballot procedures."
+      ],
+      "sources": [
+        {
+          "name": "Associated Press (AP News)",
+          "title": "FACT FOCUS: A look at false and misleading claims surrounding the 2024 election",
+          "link": "https://apnews.com/article/fact-check-misinformation-houston-rally-confrontation-99af1f80eb43d31966cae8e68dbc3415",
+          "relevance": "Primary news fact-check compiling multiple election claims and official responses."
+        },
+        {
+          "name": "FBI / CISA / ODNI",
+          "title": "Joint Statement on Foreign Disinformation and Election Security",
+          "link": "https://www.fbi.gov",
+          "relevance": "U.S. Intelligence statement identifying Russian influence networks behind fake viral voting videos."
+        }
+      ],
+      "recommendedAction": "Rely on official statements from local county election boards and non-partisan fact-checkers when encountering viral voting fraud claims online.",
+      "detectedLanguage": "English",
+      "claimType": "Election Misinformation Roundup",
+      "claimOrigin": "ORIGINAL_CLAIM",
+      "factCheckContext": "AP News compiled and debunked widespread social media rumors and Russian disinformation campaigns surrounding early voting in the 2024 U.S. presidential election.",
+      "factCheckDetails": {
+        "isFactCheckArticle": true,
+        "factCheckedOrganization": "AP News",
+        "originalClaim": "Multiple viral claims alleging voting machine fraud, fake noncitizen voters, ballot destruction, and vote flipping in the 2024 U.S. presidential election.",
+        "factCheckConclusion": "False or misleading. The claims are disproven by state election officials, police investigations, and joint intelligence agency statements."
+      },
+      "isFactCheckArticle": true,
+      "isMultipleClaimsDetected": true,
+      "sourceCredibility": {
+        "organization": "Associated Press (AP News)",
+        "credibilityScore": 95,
+        "ratingReason": "Highly trusted, independent global news organization with rigorous journalism and fact-checking standards."
+      },
+      "subClaims": [
+        {
+          "id": "sub-1",
+          "claim": "A video showing a ballot marking machine in Laurel County, Kentucky, that marks Vice President Kamala Harris when the voter tries to select former President Donald Trump is proof of fraud.",
+          "claimOrigin": "ORIGINAL_CLAIM",
+          "verdict": "MISLEADING",
+          "confidence": 95,
+          "riskLevel": "HIGH",
+          "evidenceQuality": "STRONG",
+          "summary": "The touchscreen error in Laurel County was caused by touching the edge of the candidate box, not voting machine fraud.",
+          "explanation": "Election officials tested the machine and determined that pressing the extreme corner of the screen caused an adjacent box to highlight. The machine was inspected, the voter successfully cast her ballot for Trump, and no other errors occurred.",
+          "factCheckConclusion": "Misleading. Official investigation concluded the issue was user touchscreen error, and the voter cast her intended vote.",
+          "warningSigns": [
+            "Misinterpreting touchscreen sensitivity or user error as rigged voting equipment"
+          ],
+          "evidence": [
+            "Laurel County officials and Kentucky AG office investigated and cleared the machine.",
+            "The voter confirmed she successfully cast her preferred vote."
+          ],
+          "sources": [
+            {
+              "name": "AP News",
+              "title": "User error cited as reason for Kentucky machine's switch of vote",
+              "link": "https://apnews.com/article/fact-check-misinformation-houston-rally-confrontation-99af1f80eb43d31966cae8e68dbc3415",
+              "relevance": "Direct reporting on county election official statements."
+            }
+          ]
+        },
+        {
+          "id": "sub-2",
+          "claim": "A video shows a Haitian immigrant talking about how he’s intending to vote multiple times in two Georgia counties for Vice President Kamala Harris.",
+          "claimOrigin": "ORIGINAL_CLAIM",
+          "verdict": "FAKE",
+          "confidence": 98,
+          "riskLevel": "CRITICAL",
+          "evidenceQuality": "STRONG",
+          "summary": "The viral video claiming to show a Haitian immigrant voting multiple times in Georgia is a fake foreign influence operation.",
+          "explanation": "AP analysis verified the voter IDs shown were fake and did not match registered voters in Gwinnett or Fulton counties. Joint statements from the FBI, CISA, and ODNI confirmed the video was created by Russian propaganda group Storm-1516.",
+          "factCheckConclusion": "Fake. Confirmed by U.S. intelligence agencies to be a Russian disinformation fabrication.",
+          "warningSigns": [
+            "Staged video with fake identities designed to stoke anti-immigrant sentiment and election distrust"
+          ],
+          "evidence": [
+            "IDs in the video do not match any real registered voters.",
+            "FBI, CISA, and ODNI issued a joint statement attributing the fake video to Russian influence actors."
+          ],
+          "sources": [
+            {
+              "name": "FBI / CISA / ODNI",
+              "title": "Joint Statement on Election Foreign Disinformation",
+              "link": "https://www.fbi.gov",
+              "relevance": "Official intelligence attribution of the fake video to Russian actors."
+            }
+          ]
+        },
+        {
+          "id": "sub-3",
+          "claim": "A video of a man dropping off a large number of ballots at the courthouse in Northampton County, Pennsylvania, shows evidence of voter fraud.",
+          "claimOrigin": "ORIGINAL_CLAIM",
+          "verdict": "FAKE",
+          "confidence": 95,
+          "riskLevel": "MEDIUM",
+          "evidenceQuality": "STRONG",
+          "summary": "The man dropping off ballots in Northampton County was the local postmaster performing standard mail collection duties.",
+          "explanation": "Northampton County Executive Lamont McClure confirmed the individual was the local postmaster dropping off mail-in ballots collected on his official postal route.",
+          "factCheckConclusion": "False. The video captures a postal worker executing official ballot delivery duties.",
+          "warningSigns": [
+            "Falsely accusing postal workers performing routine duties of illegal ballot stuffing"
+          ],
+          "evidence": [
+            "County Executive Lamont McClure verified the individual's identity as the local postmaster."
+          ],
+          "sources": [
+            {
+              "name": "Northampton County Executive",
+              "title": "Statement on Postmaster Ballot Drop-off",
+              "link": "https://apnews.com/article/fact-check-misinformation-houston-rally-confrontation-99af1f80eb43d31966cae8e68dbc3415",
+              "relevance": "Direct statement from county leadership."
+            }
+          ]
+        },
+        {
+          "id": "sub-4",
+          "claim": "A video shows busloads of noncitizens skipping the line to vote at a satellite election office in Allegheny County, Pennsylvania.",
+          "claimOrigin": "ORIGINAL_CLAIM",
+          "verdict": "MISLEADING",
+          "confidence": 95,
+          "riskLevel": "HIGH",
+          "evidenceQuality": "STRONG",
+          "summary": "The group comprised voters requesting mail-in ballots who required translation and disability accommodations.",
+          "explanation": "County officials confirmed the video shows voters and translators. Elderly and disabled voters were seated inside while able-bodied members waited in line according to county protocol.",
+          "factCheckConclusion": "Misleading. The video shows legal voters receiving translation and accessibility accommodations.",
+          "warningSigns": [
+            "Misrepresenting standard disability and language accommodation as illegal line-cutting"
+          ],
+          "evidence": [
+            "Allegheny County issued an official statement explaining the accommodation process provided."
+          ],
+          "sources": [
+            {
+              "name": "Allegheny County Elections",
+              "title": "Clarification on Satellite Voting Office Video",
+              "link": "https://apnews.com/article/fact-check-misinformation-houston-rally-confrontation-99af1f80eb43d31966cae8e68dbc3415",
+              "relevance": "Official explanation from county administration."
+            }
+          ]
+        },
+        {
+          "id": "sub-5",
+          "claim": "A video shows ballots marked for Trump being destroyed in Bucks County, Pennsylvania, while those for Vice President Kamala Harris were put back in their envelopes to be counted.",
+          "claimOrigin": "ORIGINAL_CLAIM",
+          "verdict": "FAKE",
+          "confidence": 98,
+          "riskLevel": "CRITICAL",
+          "evidenceQuality": "STRONG",
+          "summary": "The video showing Trump ballots being torn up in Bucks County, PA, was entirely fabricated by Russian intelligence networks.",
+          "explanation": "Bucks County Board of Elections, local law enforcement, and federal intelligence agencies investigated the clip and determined it was a manufactured fake produced by Russian actors.",
+          "factCheckConclusion": "Fake. Officially confirmed as a fabricated disinformation video created by Russian foreign operatives.",
+          "warningSigns": [
+            "Staged video simulating destruction of official ballots to undermine trust in vote counting"
+          ],
+          "evidence": [
+            "Bucks County District Attorney and police confirmed the video was fabricated.",
+            "FBI, ODNI, and CISA confirmed Russian actors manufactured and amplified the video."
+          ],
+          "sources": [
+            {
+              "name": "Bucks County Board of Elections / FBI",
+              "title": "Investigation into Fabricated Ballot Destruction Video",
+              "link": "https://apnews.com/article/fact-check-misinformation-houston-rally-confrontation-99af1f80eb43d31966cae8e68dbc3415",
+              "relevance": "Official local and federal law enforcement findings."
+            }
+          ]
+        },
+        {
+          "id": "sub-6",
+          "claim": "A Dominion voting machine in Whitfield County, Georgia, flipped a vote to a candidate not marked by the voter.",
+          "claimOrigin": "ORIGINAL_CLAIM",
+          "verdict": "FAKE",
+          "confidence": 95,
+          "riskLevel": "HIGH",
+          "evidenceQuality": "STRONG",
+          "summary": "A single voter error in Whitfield County resulted in a spoiled printed ballot, which was corrected; the machine did not flip votes.",
+          "explanation": "Whitfield County Board of Elections and Georgia Secretary of State officials confirmed the incident was an isolated voter selection error out of 6,000 ballots. The ballot was spoiled and replaced per legal procedure.",
+          "factCheckConclusion": "False. Official press releases verified the machine operated properly and the issue was corrected voter error.",
+          "warningSigns": [
+            "Labeling routine spoiled ballot corrections as automated voting machine fraud"
+          ],
+          "evidence": [
+            "Whitfield County Board of Elections official press release.",
+            "Statement from Georgia Secretary of State COO Gabriel Sterling."
+          ],
+          "sources": [
+            {
+              "name": "Whitfield County Board of Elections",
+              "title": "Press Release on Voting Machine Audit",
+              "link": "https://apnews.com/article/fact-check-misinformation-houston-rally-confrontation-99af1f80eb43d31966cae8e68dbc3415",
+              "relevance": "Local election board official statement."
+            }
+          ]
+        }
+      ],
+      "originalClaim": "Multiple viral claims alleging voting machine fraud, fake noncitizen voters, ballot destruction, and vote flipping in the 2024 U.S. presidential election.",
+      "sourceName": "Associated Press (AP News)",
+      "id": "ana-1786358810930-ox3ei",
+      "createdAt": "2026-08-10T10:46:50.930Z"
+    },
+    {
+      "inputType": "image",
+      "originalInput": "Uploaded Image Screenshot",
+      "extractedText": "Drinking garlic water on an empty stomach permanently cures cancer, diabetes, blood pressure, and all diseases within 7 days, as approved by the Indian government.",
+      "verdict": "FAKE",
+      "confidence": 98,
+      "riskLevel": "CRITICAL",
+      "category": "Health",
+      "evidenceQuality": "STRONG",
+      "claim": "Drinking garlic water on an empty stomach permanently cures cancer, diabetes, blood pressure, and all diseases within 7 days, as approved by the Indian government.",
+      "summary": "The viral graphic falsely claims that drinking garlic water on an empty stomach eliminates cancer cells completely within 7 days and permanently cures diabetes, high blood pressure, and all diseases under government approval. There is zero scientific evidence supporting garlic water as a cure for cancer or diabetes, and no government approval exists for this claim. Relying on such misinformation instead of professional medical treatment presents severe health risks.",
+      "explanation": "The graphic uses deceptive tactics, including fabricated news channel branding ('TNP NEWS 24X7'), a stock image of a doctor, and an unauthorized photo of Prime Minister Narendra Modi to create a false sense of official credibility. While garlic contains allicin and antioxidants that support general dietary wellness, established medical research from global authorities confirms that garlic water cannot cure cancer, reverse diabetes, or permanently fix hypertension. Discontinuing prescribed medical treatments for chronic diseases based on false health claims can be life-threatening.",
+      "warningSigns": [
+        "Sensational claims asserting a single remedy cures all diseases permanently in 7 days",
+        "Unauthorized use of political figures and generic stock photos to fake official backing",
+        "Fabricated news logo ('TNP NEWS 24X7') designed to mimic real media outlets",
+        "Manipulative calls to action urging users to share to 'save millions of lives'"
+      ],
+      "evidence": [
+        "The World Health Organization (WHO) and National Cancer Institute state that no single food or herbal drink cures cancer or diabetes.",
+        "The Ministry of Health and Family Welfare (India) and PIB Fact Check have issued no such approval and frequently debunk fraudulent health cure claims that misuse official likenesses.",
+        "Peer-reviewed clinical research demonstrates that while garlic has modest nutritional benefits, it cannot destroy cancer cells in human patients within 7 days or replace standard cancer therapies."
+      ],
+      "sources": [
+        {
+          "name": "National Cancer Institute",
+          "title": "Garlic and Cancer Prevention Overview",
+          "link": "https://www.cancer.gov",
+          "relevance": "Provides scientific assessment on dietary garlic and cancer risk."
+        },
+        {
+          "name": "World Health Organization",
+          "title": "Fact Sheet on Noncommunicable Diseases and Cancer",
+          "link": "https://www.who.int",
+          "relevance": "Offers authoritative guidance on evidence-based cancer and diabetes management."
+        },
+        {
+          "name": "PIB Fact Check",
+          "title": "Government Debunks Fake Health Approvals",
+          "link": "https://factcheck.pib.gov.in",
+          "relevance": "Official fact-checking unit of the Indian government debunking false health advisories."
+        }
+      ],
+      "recommendedAction": "Do not share this graphic or rely on garlic water as a substitute for professional medical treatment. Consult a licensed healthcare provider for diagnosis and management of cancer, diabetes, or blood pressure.",
+      "detectedLanguage": "English",
+      "claimType": "Health Misinformation",
+      "claimOrigin": "ORIGINAL_CLAIM",
+      "factCheckContext": "Viral social media image presenting garlic water as a government-approved cure-all for major diseases.",
+      "isFactCheckArticle": false,
+      "isMultipleClaimsDetected": false,
+      "sourceCredibility": {
+        "organization": "Viral Social Media Image (Fake Outlet: TNP News 24X7)",
+        "credibilityScore": 0,
+        "ratingReason": "Unverified graphic displaying fake news branding, false medical claims, and unauthorized images of public figures."
+      },
+      "originalClaim": "Drinking garlic water on an empty stomach permanently cures cancer, diabetes, blood pressure, and all diseases within 7 days, as approved by the Indian government.",
+      "sourceName": "Viral Social Media Image (Fake Outlet: TNP News 24X7)",
+      "id": "ana-1786358623422-4leo2",
+      "createdAt": "2026-08-10T10:43:43.422Z"
+    },
+    {
+      "inputType": "url",
+      "originalInput": "https://apnews.com/article/99af1f80eb43d31966cae8e68dbc3415?utm_source=chatgpt.com",
+      "extractedText": "Fact checking on false and misleading claims about the 2024 election | AP News Menu World SECTIONS Iran war Russia-Ukraine war Español China Asia Pacific Latin America Europe Africa TOP STORIES Israel rejects Trump's Gaza plan, more details emerge on the Strait of Hormuz and other Mideast news Porter Airlines flight in Canada canceled after child refuses to sit down and buckle up Newsletters The Afternoon Wire Our personalization engine sends you what you may have missed throughout the day. The Morning Wire Our flagship newsletter breaks down the biggest headlines of the day. See All Newsletters U.S. SECTIONS Immigration Weather Education Transportation Abortion LGBTQ+ Notable Deaths America at 250 TOP STORIES Boat capsizes in New York Harbor, woman and 5-month-old baby die Wildfires burn across western US and Canada as residents are evacuated Watchdog for $46 billion tribal gambling industry can't enforce the law without a chairperson Newsletters The Afternoon Wire Our personalization engine sends you what you may have missed throughout the day. See All Newsletters AP QUIZZES Weekly News Quiz Politics SECTIONS 2026 Elections Election Results Election calendar White House Congress Supreme Court The latest AP-NORC polls TOP STORIES Trump announces staff secretary Will Scharf will be his new White House counsel Trump's immigration crackdown looms over Minnesota's bruising Senate primary Newsletters Ground Game Your guide to the biggest stories in politics, policy and U.S. elections. See All Newsletters Sports SECTIONS NFL MLB NBA WNBA Soccer Tennis Golf NHL TOP STORIES Braves ace Chris Sale ejected by umpire Dan Merzel before start of game against Yankees Don Nelson, second-winningest NBA coach who won 5 titles as a Celtics player, dies at 86 Newsletters The Sports Wire Get AP’s in-depth sports reporting tailored to your interests. See All Newsletters Entertainment SECTIONS Movies Fashion Television Celebrity Interviews Music Books TOP STORIES 'Spider-Man: Brand New Day' keeps record pace, ‘The Odyssey’ sets new high for Nolan Newsletters AP Entertainment Wire AP’s entertainment, media, fashion and culture coverage, personalized to your interests. See All Newsletters Business Science SECTIONS Space Animals The Ancient World Climate Medicine TOP STORIES How to spot the Perseid meteor shower, a summer light show that promises to dazzle Newsletters Quizzes Games Fact Check Oddities TOP STORIES Capybaras keep their chill while crashing Brazilian legislature Viral phenomenon in Argentina has young people identifying themselves as animals A humpback whale briefly swallows kayaker in Chilean Patagonia — and it's all captured on camera Fatou, the world's oldest gorilla living in captivity, celebrates her 69th birthday at Berlin Zoo Whale surfaces, capsizes fishing boat off New Hampshire coast Chicken wings advertised as 'boneless' can have bones, Ohio Supreme Court decides Be Well SECTIONS Trending Better health At home Working well For the climate Eating well TOP STORIES Challenging your brain helps keep it healthy. Here's how to do it Being a night owl may not be great for your heart but you can do something about it As demand for GLP-1 pills and shots surges, healthy habits are still key Photography SECTIONS Photo Essays TOP STORIES How a photographer centered one woman amid the destruction of a Spokane wildfire How a photographer captured the speed and danger of Pamplona’s bull run AP Top Photos of the Month, September 2024 Newsletters The World in Pictures Get special access to AP's most compelling images from our global team of photojournalists. See All Newsletters AP Investigations Climate SECTIONS Indigenous peoples and climate Climate Questions Climate Migration India Focus TOP STORIES A pillar of environmental enforcement is targeted by Trump and Musk's AI company Lake Mead hits historic low water level as Colorado River struggles France prepares for another heat wave as western Europe sets new temperature record Health TOP STORIES Health officials urge caution for Gulf Coast beachgoers during surge of deadly bacterial infections Challenging your brain helps keep it healthy. Here's how to do it Being a night owl may not be great for your heart but you can do something about it As demand for GLP-1 pills and shots surges, healthy habits are still key New kind of flu shot is on the way as the FDA approves Moderna's mRNA-based vaccine Testing is underway on vaccines to intercept brewing colon cancer before it takes root Tech SECTIONS Artificial Intelligence Social Media TOP STORIES Sydney Towle, content creator who documented life with cancer, dies at 26 Elon Musk's xAI sues Minnesota over its first-in-the-nation law banning 'nudification' technology One Tech Tip: Don't use rice for your device. Here's how to dry out your smartphone Lifestyle SECTIONS Food &amp; Recipes Gardening Fashion Homes Travel Pets TOP STORIES Why vintage collectors are reviving computers from the 1980s Cut the number of choices you make each day. Your brain will thank you Ariana Grande’s new video sets off talk about body and beauty standards — again Religion TOP STORIES After centuries in India, the last Cochin Jews try to keep their history alive Empty pews and fear of ICE on Maryland’s Eastern Shore after TPS ends for Haitians Ohio already has the oldest Mormon temple. Now it has one of the newest Newsletters World of Faith Comprehensive global coverage of how religion shapes our world. See All Newsletters Español SECTIONS Política de EEUU Deportes TOP STORIES El ICE prevé equipar con cámaras corporales a todos sus agentes de campo para fines de agosto Nagasaki conmemora el 81 aniversario de la bomba atómica; alcalde dice que disuasión aumenta riesgo Israel rechaza el plan de Trump para Gaza y otras noticias de Oriente Medio Most watched videos Standards Press Releases My Account AP News Code of Conduct World Iran war Russia-Ukraine war Español China Asia Pacific Latin America Europe Africa Middle East U.S. Immigration Weather Education Transportation Abortion LGBTQ+ Notable Deaths America at 250 Politics 2026 Elections Election Results Election calendar White House Congress Supreme Court The latest AP-NORC polls Sports NFL MLB NBA WNBA Soccer Tennis Tennis Golf NHL Auto Racing Entertainment Movies Fashion Television Celebrity Interviews Music Books Business Tariffs Inflation Financial Markets Financial Wellness Technology Science Space Animals The Ancient World Climate Medicine Newsletters Quizzes Games Fact Check Oddities Be Well Trending Better health At home Working well For the climate Eating well Photography Photo Essays AP Investigations Climate Indigenous peoples and climate Climate Questions Climate Migration India Focus Health Tech Artificial Intelligence Social Media Lifestyle Food &amp; Recipes Gardening Fashion Homes Travel Pets Religion Español Política de EEUU Deportes Most watched videos Standards Press Releases My Account AP News Code of Conduct MORE World Iran war Russia-Ukraine war Español China Asia Pacific Latin America Europe Africa Middle East U.S. Immigration Weather Education Transportation Abortion LGBTQ+ Notable Deaths America at 250 Politics 2026 Elections Election Results Election calendar White House Congress Supreme Court The latest AP-NORC polls Sports NFL MLB NBA WNBA Soccer Tennis Tennis Golf NHL Auto Racing Entertainment Movies Fashion Television Celebrity Interviews Music Books Business Tariffs Inflation Financial Markets Financial Wellness Technology Science Space Animals The Ancient World Climate Medicine Newsletters Quizzes Games Fact Check Oddities Be Well Trending Better health At home Working well For the climate Eating well Photography Photo Essays AP Investigations Climate Indigenous peoples and climate Climate Questions Climate Migration India Focus Health Tech Artificial Intelligence Social Media Lifestyle Food &amp; Recipes Gardening Fashion Homes Travel Pets Religion Español Política de EEUU Deportes Most watched videos Standards Press Releases My Account AP News Code of Conduct Sign in Search Query Submit Search Show Search Menu Submit Search From AP News About Contact Us Accessibility Statement Terms of Use Privacy Policy Cookie Settings Do Not Sell or Share My Personal Information Limit Use and Disclosure of Sensitive Personal Information CA Notice of Collection The Associated Press ap.org Careers Advertise with us AP News Values and Principles AP’s Role in Elections AP Leads AP Definitive Source Blog AP Images Spotlight Blog AP Stylebook AP News Code of Conduct SECTIONS ap.org Careers Advertise with us AP News Values and Principles AP’s Role in Elections AP Leads AP Definitive Source Blog AP Images Spotlight Blog Copyright 2026 The Associated Press. All Rights Reserved. Menu World SECTIONS Iran war Russia-Ukraine war Español China Asia Pacific Latin America Europe Africa TOP STORIES Israel rejects Trump's Gaza plan, more details emerge on the Strait of Hormuz and other Mideast news Porter Airlines flight in Canada canceled after child refuses to sit down and buckle up Newsletters The Afternoon Wire Our personalization engine sends you what you may have missed throughout the day. The Morning Wire Our flagship newsletter breaks down the biggest headlines of the day. See All Newsletters U.S. SECTIONS Immigration Weather Education Transportation Abortion LGBTQ+ Notable Deaths America at 250 TOP STORIES Boat capsizes in New York Harbor, woman and 5-month-old baby die Wildfires burn across western US and Canada as residents are evacuated Watchdog for $46 billion tribal gambling industry can't enforce the law without a chairperson Newsletters The Afternoon Wire Our personalization engine sends you what you may have missed throughout the day. See All Newsletters AP QUIZZES Weekly News Quiz Politics SECTIONS 2026 Elections Election Results Election calendar White House Congress Supreme Court The latest AP-NORC polls TOP STORIES Trump announces staff secretary Will Scharf will be his new White House counsel Trump's immigration crackdown looms over Minnesota's bruising Senate primary Newsletters Ground Game Your guide to the biggest stories in politics, policy and U.S. elections. See All Newsletters Sports SECTIONS NFL MLB NBA WNBA Soccer Tennis Golf NHL TOP STORIES Braves ace Chris Sale ejected by umpire Dan Merzel before start of game against Yankees Don Nelson, second-winningest NBA coach who won 5 titles as a Celtics player, dies at 86 Newsletters The Sports Wire Get AP’s in-depth sports reporting tailored to your interests. See All Newsletters Entertainment SECTIONS Movies Fashion Television Celebrity Interviews Music Books TOP STORIES 'Spider-Man: Brand New Day' keeps record pace, ‘The Odyssey’ sets new high for Nolan Newsletters AP Entertainment Wire AP’s entertainment, media, fashion and culture coverage, personalized to your interests. See All Newsletters Business Science SECTIONS Space Animals The Ancient World Climate Medicine TOP STORIES How to spot the Perseid meteor shower, a summer light show that promises to dazzle Newsletters Quizzes Games Fact Check Oddities TOP STORIES Capybaras keep their chill while crashing Brazilian legislature Viral phenomenon in Argentina has young people identifying themselves as animals A humpback whale briefly swallows kayaker in Chilean Patagonia — and it's all captured on camera Fatou, the world's oldest gorilla living in captivity, celebrates her 69th birthday at Berlin Zoo Whale surfaces, capsizes fishing boat off New Hampshire coast Chicken wings advertised as 'boneless' can have bones, Ohio Supreme Court decides Be Well SECTIONS Trending Better health At home Working well For the climate Eating well TOP STORIES Challenging your brain helps keep it healthy. Here's how to do it Being a night owl may not be great for your heart but you can do something about it As demand for GLP-1 pills and shots surges, healthy habits are still key Photography SECTIONS Photo Essays TOP STORIES How a photographer centered one... [truncated]",
+      "verdict": "REAL",
+      "confidence": 95,
+      "riskLevel": "HIGH",
+      "category": "Politics",
+      "evidenceQuality": "STRONG",
+      "claim": "False and misleading claims were widely circulated during the 2024 U.S. presidential election, requiring dedicated fact-checking coverage by major news organizations such as The Associated Press.",
+      "summary": "The provided text is from AP News's dedicated fact-checking repository covering false and misleading claims related to the 2024 U.S. presidential election. Associated Press is a trusted, independent news agency that rigorously investigates viral election claims using primary sources, public records, and official state election data.",
+      "explanation": "During the 2024 election cycle, numerous false narratives and manipulated media circulated across social platforms regarding voting procedures, candidate statements, and ballot integrity. AP News maintained an active fact-checking hub to debunk these claims through empirical evidence, interviews with election officials, and official data verification.",
+      "warningSigns": [
+        "Sensationalized headlines on social media regarding ballot fraud or election interference without primary evidence",
+        "Out-of-context video clips and manipulated images of candidates or polling stations",
+        "Unverified claims published by partisan channels or anonymous social media accounts"
+      ],
+      "evidence": [
+        "Associated Press is an established non-partisan news organization adhering to strict journalistic and fact-checking standards.",
+        "Multiple non-partisan fact-checking organizations (including AP, Reuters, and FactCheck.org) documented and debunked viral misinformation regarding the 2024 U.S. election.",
+        "Official state election boards and federal agencies (such as CISA) routinely publish verified updates refuting viral election rumors."
+      ],
+      "sources": [
+        {
+          "name": "Associated Press News",
+          "title": "AP News Fact Check Hub - 2024 Election",
+          "link": "https://apnews.com/hub/ap-fact-check",
+          "relevance": "Official repository for AP News election fact-checks and debunking reports."
+        },
+        {
+          "name": "Cybersecurity and Infrastructure Security Agency (CISA)",
+          "title": "Election Security Rumor vs. Reality",
+          "link": "https://www.cisa.gov/rumor-vs-reality",
+          "relevance": "Official U.S. government resource addressing election security misinformation."
+        }
+      ],
+      "recommendedAction": "Rely on non-partisan news agencies, official secretaries of state, and verified election board portals for accurate information regarding elections.",
+      "detectedLanguage": "English",
+      "claimType": "Fact-Check Hub",
+      "factCheckContext": "This input represents an AP News fact-checking hub page aggregating debunks of viral false claims concerning the 2024 U.S. presidential election.",
+      "isFactCheckArticle": true,
+      "id": "ana-1786357188957-3i75w",
+      "createdAt": "2026-08-10T10:19:48.957Z"
+    },
+    {
+      "inputType": "text",
+      "originalInput": "nasa declared there will be no sun for the next three days",
+      "extractedText": "nasa declared there will be no sun for the next three days",
+      "verdict": "FAKE",
+      "confidence": 98,
+      "riskLevel": "MEDIUM",
+      "category": "Science",
+      "evidenceQuality": "STRONG",
+      "claim": "NASA declared that there will be no sun for the next three days.",
+      "summary": "Claims that NASA announced three days of complete darkness or 'no sun' are entirely false. This is a recurring viral internet hoax that resurfaces periodically with zero scientific foundation.",
+      "explanation": "NASA has never issued any declaration claiming the sun will vanish or that Earth will experience total darkness for three days. Planetary physics and orbital mechanics make such an event impossible. This claim is a persistent internet myth that relies on misinterpreting solar storm warnings or pure fabrication to create social media panic.",
+      "warningSigns": [
+        "Sensationalist apocalyptic claims lacking scientific backing",
+        "No matching press releases or announcements on NASA's official channels",
+        "Classic viral hoax format recirculated on messaging and social media platforms"
+      ],
+      "evidence": [
+        "NASA has officially debunked 'days of darkness' rumors multiple times in past years",
+        "Solar physics dictates that the sun cannot simply stop emitting light or disappear from Earth's sky for three days",
+        "No reputable global astronomical agency or observatory has reported or forecasted any such phenomenon"
+      ],
+      "sources": [
+        {
+          "name": "NASA",
+          "title": "NASA Official News and Announcements",
+          "link": "https://www.nasa.gov",
+          "relevance": "Official portal for verifying all authentic NASA announcements"
+        },
+        {
+          "name": "Snopes",
+          "title": "Fact Check: Will Earth Experience Days of Darkness?",
+          "link": "https://www.snopes.com/fact-check/6-days-of-darkness/",
+          "relevance": "Investigates and debunks recurring NASA solar darkness hoaxes"
+        }
+      ],
+      "recommendedAction": "Do not share this post. Verify space-related news directly through official NASA channels.",
+      "detectedLanguage": "English",
+      "claimType": "Viral Hoax",
+      "factCheckContext": "Direct analysis of viral rumor attributed to NASA.",
+      "isFactCheckArticle": false,
+      "id": "ana-1786356867661-qbrc9",
+      "createdAt": "2026-08-10T10:14:27.661Z"
+    },
+    {
+      "id": "ana-001",
+      "userId": "user-001",
+      "userEmail": "pooja2306007@gmail.com",
+      "inputType": "text",
+      "originalInput": "NASA has announced that Earth will experience three days of complete darkness because of a solar storm.",
+      "claim": "Earth will experience 3 days of total darkness due to a massive solar storm according to NASA.",
+      "isFactCheckArticle": false,
+      "verdict": "FAKE",
+      "confidence": 98,
+      "riskLevel": "HIGH",
+      "category": "Science",
+      "evidenceQuality": "STRONG",
+      "summary": "This is a recurring internet hoax that circulates every few years misattributing false statements to NASA.",
+      "explanation": "NASA has made no such announcement. While geomagnetic storms can affect power grids and satellite communications, solar activity cannot block sunlight or cause 72 hours of global darkness across the entire planet.",
+      "warningSigns": [
+        "Sensational headline designed to provoke fear and panic",
+        "Fabricated official authority citation (NASA)",
+        "Lack of official links, astronomical data, or press releases",
+        "Physically impossible scenario (solar activity blocking all sunlight)"
+      ],
+      "evidence": [
+        "Official NASA press releases and solar activity bulletins confirm no dark period predictions.",
+        "Fact-checking organizations (Snopes, AP News) have repeatedly debunked this exact claim since 2012.",
+        "Basic planetary physics dictates solar storms increase auroral brightness rather than obscuring sunlight."
+      ],
+      "sources": [
+        {
+          "name": "NASA Solar System Exploration",
+          "title": "Solar Storms and Space Weather Facts",
+          "link": "https://science.nasa.gov/sun/solar-storms",
+          "relevance": "Official Space Agency Bulletin on Solar Activity",
+          "trustworthiness": 99
+        },
+        {
+          "name": "Snopes Fact Check",
+          "title": "Will Earth Experience Total Darkness Due to Solar Storm?",
+          "link": "https://www.snopes.com/fact-check/solar-storm-darkness/",
+          "relevance": "Independent Fact Check Verification",
+          "trustworthiness": 95
+        }
+      ],
+      "recommendedAction": "Do not share or circulate this message on social media. Refer to official scientific agencies for space weather alerts.",
+      "detectedLanguage": "en",
+      "claimType": "Viral Internet Hoax",
+      "createdAt": "2026-08-08T10:11:44.821Z"
+    },
+    {
+      "id": "ana-002",
+      "userId": "user-001",
+      "userEmail": "pooja2306007@gmail.com",
+      "inputType": "text",
+      "originalInput": "Water freezes at 0 degrees Celsius under standard atmospheric pressure.",
+      "claim": "Pure water freezes at 0°C under standard atmospheric pressure.",
+      "isFactCheckArticle": false,
+      "verdict": "REAL",
+      "confidence": 99,
+      "riskLevel": "LOW",
+      "category": "Science",
+      "evidenceQuality": "STRONG",
+      "summary": "This is a fundamental scientific law and standard physical metric.",
+      "explanation": "The freezing point of pure liquid water at 1 atmosphere of pressure (101.325 kPa) is defined as 0 degrees Celsius (273.15 Kelvin).",
+      "warningSigns": [],
+      "evidence": [
+        "International Temperature Scale (ITS-90) definition.",
+        "Standard physical chemistry reference literature and textbook measurements."
+      ],
+      "sources": [
+        {
+          "name": "NIST Chemistry WebBook",
+          "title": "Thermophysical Properties of Water",
+          "link": "https://webbook.nist.gov/",
+          "relevance": "National Institute of Standards and Technology",
+          "trustworthiness": 100
+        }
+      ],
+      "recommendedAction": "This factual scientific statement is verified and safe to reference.",
+      "detectedLanguage": "en",
+      "claimType": "Established Scientific Fact",
+      "createdAt": "2026-08-09T10:11:44.821Z"
+    },
+    {
+      "id": "ana-003",
+      "userId": "admin-001",
+      "userEmail": "admin@verifact.ai",
+      "inputType": "url",
+      "originalInput": "https://factcheck.example.org/claim-miracle-cure-diabetes-cinnamon",
+      "extractedText": "Fact Check: Viral videos claim that drinking warm cinnamon tea every morning permanently cures Type 1 and Type 2 diabetes within 7 days. Verdict: False. Medical experts clarify that while cinnamon may modestly assist insulin sensitivity, it cannot cure diabetes.",
+      "claim": "Drinking warm cinnamon tea permanently cures Type 1 and Type 2 diabetes within 7 days.",
+      "isFactCheckArticle": true,
+      "factCheckContext": "Analyzed from a Fact-Checking article examining viral health claims on TikTok and Facebook.",
+      "verdict": "FAKE",
+      "confidence": 96,
+      "riskLevel": "CRITICAL",
+      "category": "Health",
+      "evidenceQuality": "STRONG",
+      "summary": "The original claim that cinnamon cures diabetes in 7 days is dangerously false health advice.",
+      "explanation": "There is no scientific or clinical evidence that cinnamon or any herbal tea can cure diabetes. Discontinuing prescribed insulin or medication based on this claim can lead to fatal ketoacidosis or diabetic coma.",
+      "warningSigns": [
+        "Promises a rapid \"miracle cure\" for chronic medical conditions",
+        "Recommends stopping standard medical treatments",
+        "Lacks clinical trial backing or peer-reviewed medical publications"
+      ],
+      "evidence": [
+        "American Diabetes Association explicit guidelines stating no dietary supplement cures diabetes.",
+        "Endocrine Society medical advisories against unverified herbal remedies."
+      ],
+      "sources": [
+        {
+          "name": "American Diabetes Association",
+          "title": "Diabetes Myth Busters & Unproven Treatments",
+          "link": "https://diabetes.org/",
+          "relevance": "Official Medical Association Statement",
+          "trustworthiness": 98
+        }
+      ],
+      "recommendedAction": "Consult a board-certified endocrinologist. Do not alter diabetes medication based on viral social media posts.",
+      "detectedLanguage": "en",
+      "claimType": "Dangerous Health Misinformation",
+      "createdAt": "2026-08-10T05:11:44.821Z"
+    }
+  ]
+}
